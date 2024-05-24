@@ -38,12 +38,19 @@ public class BezierController : MonoBehaviour
         }
 
         _lineRenderer.SetPosition((int)_slider.value, _mover.transform.position); 
+    
+    }
 
-        Debug.Log(_slider.value);        
+    private void UpdateMainNodes()
+    {
+        foreach (var bezierLine in _bezierLines)
+        {
+            bezierLine.UpdateLine();
+        }
     }
 
     private void OnNodeDragActionHandler()
     {
-        UpdateLine();
+        UpdateMainNodes();
     }
 }
