@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028326, g: 0.22571333, b: 0.30692202, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028373, g: 0.22571398, b: 0.30692294, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -254,12 +254,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79d18effca66d48f5b999b174ee3f7f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Positions: []
+  NodeCount: 50
   _origin: {fileID: 867124553}
   _end: {fileID: 1436020437}
   _mover: {fileID: 1107193865}
-  Interpolation: 0
-  NodeCount: 50
-  Nodes: []
 --- !u!4 &188371373
 Transform:
   m_ObjectHideFlags: 0
@@ -473,12 +472,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79d18effca66d48f5b999b174ee3f7f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Positions: []
+  NodeCount: 50
   _origin: {fileID: 925374381}
   _end: {fileID: 867124553}
   _mover: {fileID: 942375416}
-  Interpolation: 0
-  NodeCount: 50
-  Nodes: []
 --- !u!4 &764181502
 Transform:
   m_ObjectHideFlags: 0
@@ -1244,7 +1242,7 @@ LineRenderer:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 1
+        value: 0.5321102
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -1311,8 +1309,8 @@ MonoBehaviour:
   - {fileID: 764181501}
   - {fileID: 188371372}
   - {fileID: 1572872749}
-  _mover: {fileID: 1350873416}
   _slider: {fileID: 992113792}
+  _mainMover: {fileID: 1350873417}
 --- !u!4 &1075445893
 Transform:
   m_ObjectHideFlags: 0
@@ -1770,12 +1768,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79d18effca66d48f5b999b174ee3f7f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Positions: []
+  NodeCount: 50
   _origin: {fileID: 942375417}
   _end: {fileID: 1107193866}
   _mover: {fileID: 1350873416}
-  Interpolation: 0
-  NodeCount: 50
-  Nodes: []
 --- !u!4 &1572872750
 Transform:
   m_ObjectHideFlags: 0

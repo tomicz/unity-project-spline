@@ -35,23 +35,11 @@ public class BeizerLine : MonoBehaviour
         DrawLine();
     }
 
-    private void OnEnable()
-    {
-        _origin.OnNodeDragAction += OnNodeDragActionHandler;
-        _end.OnNodeDragAction += OnNodeDragActionHandler;
-    }
-
-    private void OnDisable()
-    {
-        _origin.OnNodeDragAction -= OnNodeDragActionHandler;
-        _end.OnNodeDragAction -= OnNodeDragActionHandler;
-    }
-
     public void DrawLine()
     {
         Positions = new List<Vector3>();
         Vector3 distance = _end.transform.position - _origin.transform.position;
-        Vector3 fraction = distance/NodeCount;          
+        Vector3 fraction = distance / NodeCount;          
         
         for (int i = 0; i <= NodeCount; i++)
         {
@@ -70,10 +58,4 @@ public class BeizerLine : MonoBehaviour
             _mover.transform.position = Positions[index];
         }
     }
-
-    private void OnNodeDragActionHandler()
-    {
-        DrawLine();
-    }
-
 }
